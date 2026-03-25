@@ -43,3 +43,11 @@ chmod +x setup_repo_structure.sh
 
 Main RoboMed system:
 https://github.com/hkhodamoradi/robomed-ai
+
+## Demo
+
+Robot perspective:
+https://youtu.be/BnZjWKFgz0M
+
+Top view:
+https://youtu.be/SilspwN7Z0g
