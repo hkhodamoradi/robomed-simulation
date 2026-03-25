@@ -1,0 +1,322 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Window.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/PaintedWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/DoorLever.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Armchair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/hospital/protos/HospitalBed.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/lights/protos/CeilingLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/hospital/protos/EmergencyExitSign.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/hospital/protos/Curtain.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/hospital/protos/DripStand.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/hospital/protos/MedicineBottle.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/Monitor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/television/protos/Television.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/cabinet/protos/Cabinet.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/pal_robotics/tiago_lite/protos/TiagoLite.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/softbank/nao/protos/VisualArmature.proto"
+
+WorldInfo {
+  info [
+    "Sample of how the indoor objects can be placed"
+  ]
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position -5.151797285965022 -3.2365120838290062 16.403974788395097
+  exposure 0.5
+  followType "None"
+}
+VisualArmature {
+  translation -3.42 -1.91 0.27
+  rotation 0 0 1 3.14159
+  dimension 0.01 0.2 0.2
+  textureUrl [
+    "../textures/ChatGPT Image Mar 6, 2026, 12_00_18 PM.png"
+  ]
+}
+TiagoLite {
+  translation -9.55967 -4.86917 0.0947868
+  rotation -5.126739978314033e-05 7.63648996769786e-05 0.9999999957700278 0.395883
+  controller "unified_controller_V4"
+  cameraSlot [
+    Solid {
+      translation -0.028 -0.035 -0.009
+      rotation 1 0 0 -1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+            baseColorMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/textures/matte_car_paint/matte_car_paint_base_color.jpg"
+              ]
+              filtering 5
+            }
+            roughnessMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/textures/matte_car_paint/matte_car_paint_roughness.jpg"
+              ]
+              filtering 5
+            }
+            metalness 0
+            normalMapFactor 0.5
+            textureTransform TextureTransform {
+              scale 10 10
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/orbbec/protos/meshes/astra.obj"
+            ]
+          }
+        }
+        Camera {
+          translation 0.027 0.011 0.034
+          name "Astra rgb"
+          fieldOfView 1.04
+          width 1920
+          height 1080
+        }
+        RangeFinder {
+          translation 0.027 0.037 0.034
+          name "Astra depth"
+          fieldOfView 1.04
+          width 640
+          height 480
+          minRange 0.6
+          maxRange 8
+        }
+      ]
+      name "Astra"
+      boundingObject Group {
+        children [
+          DEF MAIN_BODY_BOX Pose {
+            translation 0.006 0 0.034
+            children [
+              Box {
+                size 0.04 0.165 0.029
+              }
+            ]
+          }
+          DEF SUPPORT_BOX Pose {
+            translation -0.009 0 0.007
+            children [
+              Box {
+                size 0.061 0.06 0.014
+              }
+            ]
+          }
+        ]
+      }
+      physics Physics {
+        density -1
+        mass 0.19
+      }
+    }
+  ]
+}
+Cabinet {
+  hidden position_6_0 0.00026585447089624706
+  hidden translation_7 -5.417985961035654e-05 -7.37552127705321e-09 0
+  hidden rotation_7 0 0 1 0.00027225982225233036
+  hidden position_10_0 -0.0002260163023471997
+  hidden translation_11 -3.915187809999809e-05 4.531095998405732e-09 0
+  hidden rotation_11 0 0 -1 0.00023146197744078437
+  translation -9.73 -2.31 0
+  rotation 0 0 1 1.01503e-06
+}
+Cabinet {
+  hidden position_6_0 0.0002658544708961636
+  hidden translation_7 -5.4179859610340744e-05 -7.37552127705321e-09 0
+  hidden rotation_7 0 0 1 0.00027225982225233036
+  hidden position_10_0 -0.00022601630234720966
+  hidden translation_11 -3.915187810000154e-05 4.531095998405732e-09 0
+  hidden rotation_11 0 0 -1 0.00023146197744078437
+  translation -9.73 -1.25 0
+  rotation 0 0 1 1.01503e-06
+  name "cabinet(1)"
+}
+Pedestrian {
+  translation -2.88 -1.72 0.61
+  rotation 0.5773509358560258 0.577349935856137 0.577349935856137 -2.094395307179586
+  pantsColor 0.53 0.25 0.4
+}
+DEF Vital_monitor Television {
+  translation -2.91 -0.2 0.9
+  rotation 3.59841e-07 2.09385e-07 -1 1.5708
+  displayWidth 2096
+  displayHeight 1024
+  controller "monitor_test"
+}
+Monitor {
+  translation -2.9 -3.11 0.17
+  rotation 2.355999999987029e-06 -2.3368199999871343e-06 0.9999999999944944 -1.5707953071795862
+}
+DEF flacon MedicineBottle {
+  translation -1.86 -0.86 1.52
+  rotation 0 1 0 3.14159
+}
+DripStand {
+  translation -1.89 -0.8 0
+}
+Curtain {
+  translation -0.17 -1.73 0.75
+}
+EmergencyExitSign {
+  translation -8.28 -6.84 2.21
+  rotation 1 0 0 1.5708
+}
+CeilingLight {
+  translation -7 -3.26 2.27
+  pointLightIntensity 10
+  pointLightRadius 200
+}
+CeilingLight {
+  translation -3.97 -3.26 2.27
+  name "ceiling light(1)"
+  pointLightIntensity 10
+  pointLightRadius 200
+}
+HospitalBed {
+  translation -2.89 -1.99 0.28
+  rotation 0 0 1 3.14159
+}
+TexturedBackground {
+  texture "empty_office"
+  skybox FALSE
+  skyColor [
+    0.2 0.2 0.2
+  ]
+}
+DEF FLOOR Solid {
+  translation -4.95 -3.3 0
+  children [
+    Shape {
+      appearance Parquetry {
+        type "light strip"
+        colorOverride 0 0 0
+        textureTransform TextureTransform {
+          scale 6 9
+        }
+        IBLStrength 100
+      }
+      geometry DEF FLOOR_PLANE Plane {
+        size 9.9 6.6
+      }
+    }
+  ]
+  name "floor"
+  boundingObject USE FLOOR_PLANE
+  locked TRUE
+}
+DEF ROOF Solid {
+  translation -4.95 -3.3 2.3999
+  rotation 1 0 0 3.14159
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.8 0.8
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/roughcast.jpg"
+          ]
+        }
+        roughness 0.5
+        metalness 0
+        textureTransform TextureTransform {
+          scale 8 8
+        }
+      }
+      geometry USE FLOOR_PLANE
+    }
+  ]
+  name "roof"
+  boundingObject USE FLOOR_PLANE
+  locked TRUE
+}
+Wall {
+  translation 0 -0.65 0
+  name "wall 1"
+  size 0.3 1 2.4
+}
+Window {
+  translation 0 -1.65 0
+  name "window 1"
+  size 0.3 1 2.4
+  frameAppearance PaintedWood {
+    colorOverride 0.13333333333333333 0.13333333333333333 0.13333333333333333
+  }
+}
+Wall {
+  translation 0 -4.3 0
+  name "wall 2"
+  size 0.3 4.3 2.4
+}
+Wall {
+  translation -9.9 -2.3 -0.02
+  name "wall 3"
+  size 0.3 4.3 2.4
+}
+Wall {
+  translation -9.9 -5.95 0
+  name "wall 4"
+  size 0.3 1 2.4
+}
+Wall {
+  translation -3.8 0 0
+  rotation 0 0 1 1.5708
+  name "wall 5"
+  size 0.3 7.9 2.4
+}
+Wall {
+  translation -9.4 0 0
+  rotation 0 0 1 1.5708
+  name "wall 6"
+  size 0.3 1.3 2.4
+}
+Window {
+  translation -8.25 0 0
+  rotation 0 0 1 1.5708
+  name "window 2"
+  size 0.3 1 2.4
+  frameAppearance PaintedWood {
+    colorOverride 0.13333333333333333 0.13333333333333333 0.13333333333333333
+  }
+}
+Wall {
+  translation -9.4 -6.6 0
+  rotation 0 0 1 1.5708
+  name "wall 7"
+  size 0.3 1.3 2.4
+}
+Door {
+  translation -8.25 -6.6 0
+  rotation 0 0 1 1.5708
+  name "door 2"
+  size 0.3 1 2.4
+  canBeOpen FALSE
+  frameAppearance PaintedWood {
+    colorOverride 0.13333333333333333 0.13333333333333333 0.13333333333333333
+  }
+  doorHandle DoorLever {
+    rotation -0.0012868889344011497 0.9999991719580925 0 0
+    hasStaticParent TRUE
+  }
+}
+Wall {
+  translation -3.8 -6.6 0
+  rotation 0 0 1 1.5708
+  name "wall 8"
+  size 0.3 7.9 2.4
+}
+Armchair {
+  translation -0.847834 -4.34074 0
+  rotation 0 0 1 3.09131
+}

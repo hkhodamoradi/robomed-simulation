@@ -1,0 +1,129 @@
+{
+  "run_id": "mission_20260313_121044",
+  "controller_name": "unified_controller_V3",
+  "software_version": "demo_v3",
+  "start_time": "2026-03-13T12:10:44.510059",
+  "end_time": "2026-03-13T12:13:06.413040",
+  "start_sim_time_s": 0.0,
+  "end_sim_time_s": 94.624,
+  "mission_duration_s": 94.624,
+  "result": "SUCCESS",
+  "basic_time_step_ms": 32,
+  "patient_found": true,
+  "patient_centered": true,
+  "approach_done": true,
+  "bed_label": "BED 1",
+  "bed_label_source": "hardcoded_demo",
+  "monitor_found": true,
+  "monitor_snapshot": "/home/hkh/Documents/MedRob_project/controllers/unified_controller_V4/runtime/snapshots/tv_crop_qr_success_00_t091.984_mission_20260313_121044.png",
+  "full_snapshot": "/home/hkh/Documents/MedRob_project/controllers/unified_controller_V4/runtime/snapshots/full_camera_snapshot_t091.984_mission_20260313_121044.png",
+  "qr_decode_success": true,
+  "qr_payload": "{\"name\": \"Demo-Patient\", \"patient_id\": \"P-10294\", \"age\": 54, \"bed\": \"1A\", \"vitals\": {\"heart_rate_bpm\": 142, \"spo2_percent\": 86, \"temperature_c\": 38.9, \"blood_pressure_mmHg\": \"165/101\", \"respiration_rpm\": 29}, \"triage\": \"HIGH\", \"action\": \"Human review required\", \"timestamp\": \"2026-03-04 10:58:52\"}",
+  "qr_points": [
+    [
+      [
+        183.26026916503906,
+        204.79437255859375
+      ],
+      [
+        397.26885986328125,
+        207.0236358642578
+      ],
+      [
+        403.5510559082031,
+        464.59320068359375
+      ],
+      [
+        193.30091857910156,
+        492.6265563964844
+      ]
+    ]
+  ],
+  "qr_source_image": "/home/hkh/Documents/MedRob_project/controllers/unified_controller_V4/runtime/snapshots/tv_crop_qr_success_00_t091.984_mission_20260313_121044.png",
+  "qr_decoder": "opencv_raw_bgr",
+  "qr_payload_json": {
+    "name": "Demo-Patient",
+    "patient_id": "P-10294",
+    "age": 54,
+    "bed": "1A",
+    "vitals": {
+      "heart_rate_bpm": 142,
+      "spo2_percent": 86,
+      "temperature_c": 38.9,
+      "blood_pressure_mmHg": "165/101",
+      "respiration_rpm": 29
+    },
+    "triage": "HIGH",
+    "action": "Human review required",
+    "timestamp": "2026-03-04 10:58:52"
+  },
+  "qr_patient_id": "P-10294",
+  "qr_bed_raw": "1A",
+  "qr_bed": "BED 1",
+  "qr_vitals": {
+    "heart_rate_bpm": 142,
+    "spo2_percent": 86,
+    "temperature_c": 38.9,
+    "blood_pressure_mmHg": "165/101",
+    "respiration_rpm": 29
+  },
+  "qr_timestamp": null,
+  "profile_name": "emergency",
+  "urgency_level": "high",
+  "patient_assessment": {
+    "profile_name": "emergency",
+    "bed_label_expected": "BED 1",
+    "room_temperature_c": 23.1,
+    "room_humidity_percent": 43.0,
+    "face_temperature_c": 38.9,
+    "chest_temperature_c": 39.2,
+    "forehead_temperature_c": 39.0,
+    "respiration_rate_bpm": 31.0,
+    "chest_motion_frequency_hz": 0.52,
+    "chest_motion_amplitude_mm": 11.8,
+    "face_color_label": "pale with reddish patches",
+    "face_color_score": 0.42,
+    "skin_perfusion_label": "reduced",
+    "consciousness_label": "reduced responsiveness",
+    "pain_expression_label": "possible distress",
+    "eye_open_state": "mostly closed",
+    "posture_label": "limited movement, possible weakness",
+    "urgency_level": "high",
+    "human_review_recommended": true,
+    "clinical_note": "Elevated temperature and increased respiratory motion suggest a potentially unstable patient requiring urgent human review."
+  },
+  "human_review_required": true,
+  "status_light": "red",
+  "mission_status_text": "REVIEW REQUIRED",
+  "states": [
+    {
+      "sim_time_s": 7.168,
+      "wall_time": "2026-03-13T12:10:54.535871",
+      "from": "INIT",
+      "to": "FIND_PATIENT",
+      "reason": "start mission"
+    },
+    {
+      "sim_time_s": 73.776,
+      "wall_time": "2026-03-13T12:12:41.496275",
+      "from": "FIND_PATIENT",
+      "to": "READ_BED_LABEL",
+      "reason": "patient found and approached"
+    },
+    {
+      "sim_time_s": 79.552,
+      "wall_time": "2026-03-13T12:12:47.831237",
+      "from": "READ_BED_LABEL",
+      "to": "FIND_MONITOR",
+      "reason": "bed label read"
+    },
+    {
+      "sim_time_s": 92.0,
+      "wall_time": "2026-03-13T12:13:03.727128",
+      "from": "FIND_MONITOR",
+      "to": "SAVE_RESULTS",
+      "reason": "monitor snapshot saved"
+    }
+  ],
+  "notes": []
+}

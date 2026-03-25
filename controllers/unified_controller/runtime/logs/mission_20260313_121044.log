@@ -1,0 +1,234 @@
+[sim=   0.000s | wall=2026-03-13T12:10:44.510] [MISSION_START] run_id=mission_20260313_121044 summary_path=/home/hkh/Documents/MedRob_project/controllers/unified_controller_V4/runtime/exports/mission_20260313_121044_summary.json
+[sim=   0.000s | wall=2026-03-13T12:10:44.510] [MONITOR_CASE] wrote shared case file: /home/hkh/Documents/MedRob_project/controllers/unified_controller_V4/runtime/monitor_case.json case=emergency
+[sim=   0.000s | wall=2026-03-13T12:10:44.510] [BED] initialized
+[sim=   0.176s | wall=2026-03-13T12:10:47.340] [INIT] rgb=1920x1080 depth=ok
+[sim=   7.168s | wall=2026-03-13T12:10:54.535] [MISSION] INIT -> FIND_PATIENT (start mission)
+[sim=   7.184s | wall=2026-03-13T12:10:54.573] [PATIENT][TORSO] detect green=148 x=-0.100 dmed=6.88
+[sim=   7.184s | wall=2026-03-13T12:10:54.575] [PATIENT][STATE] SEARCH_TORSO -> CENTER_TORSO
+[sim=   8.592s | wall=2026-03-13T12:10:56.203] [PATIENT][TORSO] centered -> APPROACH_TORSO
+[sim=   8.592s | wall=2026-03-13T12:10:56.204] [PATIENT][STATE] CENTER_TORSO -> APPROACH_TORSO
+[sim=  66.752s | wall=2026-03-13T12:12:32.919] [PATIENT][SAFE] reached safe distance dmed=1.20
+[sim=  66.752s | wall=2026-03-13T12:12:32.921] [PATIENT][STATE] APPROACH_TORSO -> FACE_SETUP
+[sim=  69.376s | wall=2026-03-13T12:12:35.500] [PATIENT][FACE] setup done -> SEARCH_FACE
+[sim=  69.376s | wall=2026-03-13T12:12:35.502] [PATIENT][STATE] FACE_SETUP -> SEARCH_FACE
+[sim=  69.392s | wall=2026-03-13T12:12:35.539] [PATIENT][FACE] tracking x=0.621 pixels=4679
+[sim=  69.392s | wall=2026-03-13T12:12:35.539] [PATIENT][FACE] detect n=4679 x=0.621
+[sim=  69.392s | wall=2026-03-13T12:12:35.540] [PATIENT][STATE] SEARCH_FACE -> CENTER_FACE
+[sim=  69.408s | wall=2026-03-13T12:12:35.568] [PATIENT][FACE] tracking x=0.664 pixels=4132
+[sim=  69.424s | wall=2026-03-13T12:12:35.597] [PATIENT][FACE] tracking x=0.684 pixels=3345
+[sim=  69.440s | wall=2026-03-13T12:12:35.623] [PATIENT][FACE] tracking x=0.669 pixels=2386
+[sim=  69.456s | wall=2026-03-13T12:12:35.650] [PATIENT][FACE] tracking x=0.685 pixels=1774
+[sim=  69.472s | wall=2026-03-13T12:12:35.677] [PATIENT][FACE] tracking x=0.716 pixels=1232
+[sim=  69.488s | wall=2026-03-13T12:12:35.704] [PATIENT][FACE] tracking x=0.719 pixels=790
+[sim=  69.504s | wall=2026-03-13T12:12:35.730] [PATIENT][FACE] tracking x=0.568 pixels=362
+[sim=  69.520s | wall=2026-03-13T12:12:35.764] [PATIENT][FACE] tracking x=0.485 pixels=240
+[sim=  69.536s | wall=2026-03-13T12:12:35.797] [PATIENT][FACE] tracking x=0.508 pixels=216
+[sim=  69.552s | wall=2026-03-13T12:12:35.828] [PATIENT][FACE] tracking x=0.534 pixels=184
+[sim=  69.568s | wall=2026-03-13T12:12:35.859] [PATIENT][FACE] tracking x=0.538 pixels=157
+[sim=  69.584s | wall=2026-03-13T12:12:35.886] [PATIENT][FACE] tracking x=0.507 pixels=128
+[sim=  69.600s | wall=2026-03-13T12:12:35.913] [PATIENT][FACE] tracking x=0.490 pixels=120
+[sim=  69.616s | wall=2026-03-13T12:12:35.939] [PATIENT][FACE] tracking x=0.509 pixels=112
+[sim=  69.632s | wall=2026-03-13T12:12:35.966] [PATIENT][FACE] tracking x=0.537 pixels=109
+[sim=  69.648s | wall=2026-03-13T12:12:35.996] [PATIENT][FACE] tracking x=0.561 pixels=104
+[sim=  69.664s | wall=2026-03-13T12:12:36.025] [PATIENT][FACE] tracking x=0.584 pixels=99
+[sim=  69.680s | wall=2026-03-13T12:12:36.051] [PATIENT][FACE] tracking x=0.599 pixels=105
+[sim=  69.696s | wall=2026-03-13T12:12:36.077] [PATIENT][FACE] tracking x=0.611 pixels=100
+[sim=  69.712s | wall=2026-03-13T12:12:36.103] [PATIENT][FACE] tracking x=0.623 pixels=102
+[sim=  69.728s | wall=2026-03-13T12:12:36.130] [PATIENT][FACE] tracking x=0.636 pixels=94
+[sim=  69.744s | wall=2026-03-13T12:12:36.156] [PATIENT][FACE] tracking x=0.643 pixels=104
+[sim=  69.760s | wall=2026-03-13T12:12:36.182] [PATIENT][FACE] tracking x=0.650 pixels=106
+[sim=  69.776s | wall=2026-03-13T12:12:36.209] [PATIENT][FACE] tracking x=0.656 pixels=106
+[sim=  69.792s | wall=2026-03-13T12:12:36.236] [PATIENT][FACE] tracking x=0.663 pixels=96
+[sim=  69.808s | wall=2026-03-13T12:12:36.261] [PATIENT][FACE] tracking x=0.664 pixels=98
+[sim=  69.824s | wall=2026-03-13T12:12:36.286] [PATIENT][FACE] tracking x=0.669 pixels=97
+[sim=  69.840s | wall=2026-03-13T12:12:36.311] [PATIENT][FACE] tracking x=0.671 pixels=99
+[sim=  69.856s | wall=2026-03-13T12:12:36.336] [PATIENT][FACE] tracking x=0.675 pixels=95
+[sim=  69.872s | wall=2026-03-13T12:12:36.361] [PATIENT][FACE] tracking x=0.675 pixels=96
+[sim=  69.888s | wall=2026-03-13T12:12:36.385] [PATIENT][FACE] tracking x=0.677 pixels=96
+[sim=  69.904s | wall=2026-03-13T12:12:36.410] [PATIENT][FACE] tracking x=0.678 pixels=95
+[sim=  69.920s | wall=2026-03-13T12:12:36.435] [PATIENT][FACE] tracking x=0.682 pixels=95
+[sim=  69.936s | wall=2026-03-13T12:12:36.460] [PATIENT][FACE] tracking x=0.682 pixels=90
+[sim=  69.952s | wall=2026-03-13T12:12:36.485] [PATIENT][FACE] tracking x=0.681 pixels=96
+[sim=  69.968s | wall=2026-03-13T12:12:36.510] [PATIENT][FACE] tracking x=0.682 pixels=96
+[sim=  69.984s | wall=2026-03-13T12:12:36.535] [PATIENT][FACE] tracking x=0.684 pixels=97
+[sim=  70.000s | wall=2026-03-13T12:12:36.560] [PATIENT][FACE] tracking x=0.684 pixels=98
+[sim=  70.016s | wall=2026-03-13T12:12:36.585] [PATIENT][FACE] tracking x=0.684 pixels=97
+[sim=  70.032s | wall=2026-03-13T12:12:36.610] [PATIENT][FACE] tracking x=0.684 pixels=97
+[sim=  70.048s | wall=2026-03-13T12:12:36.635] [PATIENT][FACE] tracking x=0.685 pixels=96
+[sim=  70.064s | wall=2026-03-13T12:12:36.660] [PATIENT][FACE] tracking x=0.684 pixels=95
+[sim=  70.080s | wall=2026-03-13T12:12:36.685] [PATIENT][FACE] tracking x=0.685 pixels=94
+[sim=  70.096s | wall=2026-03-13T12:12:36.710] [PATIENT][FACE] tracking x=0.685 pixels=94
+[sim=  70.112s | wall=2026-03-13T12:12:36.735] [PATIENT][FACE] tracking x=0.686 pixels=95
+[sim=  70.128s | wall=2026-03-13T12:12:36.760] [PATIENT][FACE] tracking x=0.687 pixels=96
+[sim=  70.144s | wall=2026-03-13T12:12:36.786] [PATIENT][FACE] tracking x=0.687 pixels=95
+[sim=  70.160s | wall=2026-03-13T12:12:36.811] [PATIENT][FACE] tracking x=0.688 pixels=96
+[sim=  70.176s | wall=2026-03-13T12:12:36.836] [PATIENT][FACE] tracking x=0.689 pixels=94
+[sim=  70.192s | wall=2026-03-13T12:12:36.861] [PATIENT][FACE] tracking x=0.689 pixels=94
+[sim=  70.208s | wall=2026-03-13T12:12:36.886] [PATIENT][FACE] tracking x=0.689 pixels=94
+[sim=  70.224s | wall=2026-03-13T12:12:36.912] [PATIENT][FACE] tracking x=0.689 pixels=94
+[sim=  70.240s | wall=2026-03-13T12:12:36.937] [PATIENT][FACE] tracking x=0.689 pixels=94
+[sim=  70.256s | wall=2026-03-13T12:12:36.961] [PATIENT][FACE] tracking x=0.689 pixels=94
+[sim=  70.272s | wall=2026-03-13T12:12:36.986] [PATIENT][FACE] tracking x=0.689 pixels=94
+[sim=  70.288s | wall=2026-03-13T12:12:37.011] [PATIENT][FACE] tracking x=0.689 pixels=94
+[sim=  70.304s | wall=2026-03-13T12:12:37.036] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.320s | wall=2026-03-13T12:12:37.061] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.336s | wall=2026-03-13T12:12:37.085] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.352s | wall=2026-03-13T12:12:37.110] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.368s | wall=2026-03-13T12:12:37.135] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.384s | wall=2026-03-13T12:12:37.159] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.400s | wall=2026-03-13T12:12:37.184] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.416s | wall=2026-03-13T12:12:37.209] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.432s | wall=2026-03-13T12:12:37.234] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.448s | wall=2026-03-13T12:12:37.259] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.464s | wall=2026-03-13T12:12:37.284] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.480s | wall=2026-03-13T12:12:37.309] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.496s | wall=2026-03-13T12:12:37.335] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.512s | wall=2026-03-13T12:12:37.360] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.528s | wall=2026-03-13T12:12:37.385] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.544s | wall=2026-03-13T12:12:37.410] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.560s | wall=2026-03-13T12:12:37.435] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.576s | wall=2026-03-13T12:12:37.460] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.592s | wall=2026-03-13T12:12:37.485] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.608s | wall=2026-03-13T12:12:37.509] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.624s | wall=2026-03-13T12:12:37.534] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.640s | wall=2026-03-13T12:12:37.558] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.656s | wall=2026-03-13T12:12:37.583] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.672s | wall=2026-03-13T12:12:37.608] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.688s | wall=2026-03-13T12:12:37.633] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.704s | wall=2026-03-13T12:12:37.658] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.720s | wall=2026-03-13T12:12:37.683] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.736s | wall=2026-03-13T12:12:37.708] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.752s | wall=2026-03-13T12:12:37.733] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.768s | wall=2026-03-13T12:12:37.758] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.784s | wall=2026-03-13T12:12:37.783] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.800s | wall=2026-03-13T12:12:37.808] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.816s | wall=2026-03-13T12:12:37.833] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.832s | wall=2026-03-13T12:12:37.858] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.848s | wall=2026-03-13T12:12:37.883] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.864s | wall=2026-03-13T12:12:37.908] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.880s | wall=2026-03-13T12:12:37.933] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.896s | wall=2026-03-13T12:12:37.958] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.912s | wall=2026-03-13T12:12:37.983] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.928s | wall=2026-03-13T12:12:38.009] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.944s | wall=2026-03-13T12:12:38.034] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.960s | wall=2026-03-13T12:12:38.059] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.976s | wall=2026-03-13T12:12:38.084] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  70.992s | wall=2026-03-13T12:12:38.109] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.008s | wall=2026-03-13T12:12:38.134] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.024s | wall=2026-03-13T12:12:38.158] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.040s | wall=2026-03-13T12:12:38.183] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.056s | wall=2026-03-13T12:12:38.209] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.072s | wall=2026-03-13T12:12:38.233] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.088s | wall=2026-03-13T12:12:38.258] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.104s | wall=2026-03-13T12:12:38.283] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.120s | wall=2026-03-13T12:12:38.308] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.136s | wall=2026-03-13T12:12:38.333] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.152s | wall=2026-03-13T12:12:38.358] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.168s | wall=2026-03-13T12:12:38.383] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.184s | wall=2026-03-13T12:12:38.408] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.200s | wall=2026-03-13T12:12:38.433] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.216s | wall=2026-03-13T12:12:38.458] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.232s | wall=2026-03-13T12:12:38.483] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.248s | wall=2026-03-13T12:12:38.508] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.264s | wall=2026-03-13T12:12:38.533] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.280s | wall=2026-03-13T12:12:38.558] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.296s | wall=2026-03-13T12:12:38.584] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.312s | wall=2026-03-13T12:12:38.609] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.328s | wall=2026-03-13T12:12:38.634] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.344s | wall=2026-03-13T12:12:38.659] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.360s | wall=2026-03-13T12:12:38.684] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.376s | wall=2026-03-13T12:12:38.709] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.392s | wall=2026-03-13T12:12:38.734] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.408s | wall=2026-03-13T12:12:38.758] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.424s | wall=2026-03-13T12:12:38.783] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.440s | wall=2026-03-13T12:12:38.808] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.456s | wall=2026-03-13T12:12:38.833] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.472s | wall=2026-03-13T12:12:38.858] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.488s | wall=2026-03-13T12:12:38.883] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.504s | wall=2026-03-13T12:12:38.908] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.520s | wall=2026-03-13T12:12:38.933] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.536s | wall=2026-03-13T12:12:38.958] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.552s | wall=2026-03-13T12:12:38.983] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.568s | wall=2026-03-13T12:12:39.008] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.584s | wall=2026-03-13T12:12:39.033] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.600s | wall=2026-03-13T12:12:39.058] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.616s | wall=2026-03-13T12:12:39.083] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.632s | wall=2026-03-13T12:12:39.107] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.648s | wall=2026-03-13T12:12:39.133] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.664s | wall=2026-03-13T12:12:39.157] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.680s | wall=2026-03-13T12:12:39.183] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.696s | wall=2026-03-13T12:12:39.208] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.712s | wall=2026-03-13T12:12:39.233] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.728s | wall=2026-03-13T12:12:39.258] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.744s | wall=2026-03-13T12:12:39.283] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.760s | wall=2026-03-13T12:12:39.308] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.776s | wall=2026-03-13T12:12:39.333] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.792s | wall=2026-03-13T12:12:39.358] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.808s | wall=2026-03-13T12:12:39.383] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.824s | wall=2026-03-13T12:12:39.408] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.840s | wall=2026-03-13T12:12:39.433] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.856s | wall=2026-03-13T12:12:39.458] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.872s | wall=2026-03-13T12:12:39.483] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.888s | wall=2026-03-13T12:12:39.508] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.904s | wall=2026-03-13T12:12:39.533] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.920s | wall=2026-03-13T12:12:39.558] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.936s | wall=2026-03-13T12:12:39.583] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.952s | wall=2026-03-13T12:12:39.608] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.968s | wall=2026-03-13T12:12:39.633] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  71.984s | wall=2026-03-13T12:12:39.659] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.000s | wall=2026-03-13T12:12:39.683] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.016s | wall=2026-03-13T12:12:39.708] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.032s | wall=2026-03-13T12:12:39.733] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.048s | wall=2026-03-13T12:12:39.758] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.064s | wall=2026-03-13T12:12:39.783] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.080s | wall=2026-03-13T12:12:39.808] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.096s | wall=2026-03-13T12:12:39.833] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.112s | wall=2026-03-13T12:12:39.858] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.128s | wall=2026-03-13T12:12:39.883] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.144s | wall=2026-03-13T12:12:39.908] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.160s | wall=2026-03-13T12:12:39.933] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.176s | wall=2026-03-13T12:12:39.959] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.192s | wall=2026-03-13T12:12:39.983] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.208s | wall=2026-03-13T12:12:40.008] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.224s | wall=2026-03-13T12:12:40.033] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.240s | wall=2026-03-13T12:12:40.058] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.256s | wall=2026-03-13T12:12:40.084] [PATIENT][FACE] tracking x=0.690 pixels=93
+[sim=  72.272s | wall=2026-03-13T12:12:40.102] [PATIENT][FACE] timeout -> STOP
+[sim=  72.272s | wall=2026-03-13T12:12:40.103] [PATIENT][STATE] CENTER_FACE -> STOP
+[sim=  73.776s | wall=2026-03-13T12:12:41.496] [MISSION] FIND_PATIENT -> READ_BED_LABEL (patient found and approached)
+[sim=  73.952s | wall=2026-03-13T12:12:41.807] [BED][SEARCH] candidate found
+[sim=  73.952s | wall=2026-03-13T12:12:41.808] [BED][STATE] SEARCH -> CONFIRM
+[sim=  75.952s | wall=2026-03-13T12:12:43.824] [BED][CONFIRM] confirmed
+[sim=  75.952s | wall=2026-03-13T12:12:43.824] [BED][STATE] CONFIRM -> TRACK
+[sim=  76.288s | wall=2026-03-13T12:12:44.399] [BED][STATE] TRACK -> LOST
+[sim=  76.608s | wall=2026-03-13T12:12:44.886] [BED][STATE] LOST -> SEARCH
+[sim=  76.624s | wall=2026-03-13T12:12:44.910] [BED][SEARCH] candidate found
+[sim=  76.624s | wall=2026-03-13T12:12:44.910] [BED][STATE] SEARCH -> CONFIRM
+[sim=  76.640s | wall=2026-03-13T12:12:44.933] [BED][CONFIRM] confirmed
+[sim=  76.640s | wall=2026-03-13T12:12:44.933] [BED][STATE] CONFIRM -> TRACK
+[sim=  76.736s | wall=2026-03-13T12:12:45.079] [BED][STATE] TRACK -> READ
+[sim=  76.752s | wall=2026-03-13T12:12:45.103] [BED][READ] label=BED 1
+[sim=  76.752s | wall=2026-03-13T12:12:45.103] [BED][STATE] READ -> HOLD_SUCCESS
+[sim=  79.552s | wall=2026-03-13T12:12:47.831] [MISSION] READ_BED_LABEL -> FIND_MONITOR (bed label read)
+[sim=  82.496s | wall=2026-03-13T12:12:51.402] [TV][SEARCH] candidate found bbox=(192, 290, 408, 368)
+[sim=  82.496s | wall=2026-03-13T12:12:51.402] [TV][STATE] SEARCH_TV -> CONFIRM_TV
+[sim=  84.496s | wall=2026-03-13T12:12:53.326] [TV][CONFIRM] 2/4
+[sim=  84.512s | wall=2026-03-13T12:12:53.360] [TV][CONFIRM] 3/4
+[sim=  84.528s | wall=2026-03-13T12:12:53.393] [TV][CONFIRM] 4/4
+[sim=  84.528s | wall=2026-03-13T12:12:53.393] [TV][CONFIRM] TV confirmed and locked bbox=(192, 289, 434, 369)
+[sim=  84.528s | wall=2026-03-13T12:12:53.393] [TV][STATE] CONFIRM_TV -> WAIT_QR
+[sim=  90.400s | wall=2026-03-13T12:13:02.095] [TV][WAIT_QR] entered qr_only window at cycle t=14.40s
+[sim=  90.480s | wall=2026-03-13T12:13:02.218] [TV][WAIT_QR] qr_only confirmed -> SAVE_TV with 3 candidates
+[sim=  90.480s | wall=2026-03-13T12:13:02.218] [TV][STATE] WAIT_QR -> SAVE_TV
+[sim=  91.984s | wall=2026-03-13T12:13:03.674] [SNAPSHOT] /home/hkh/Documents/MedRob_project/controllers/unified_controller_V4/runtime/snapshots/full_camera_snapshot_t091.984_mission_20260313_121044.png
+[sim=  91.984s | wall=2026-03-13T12:13:03.703] [SNAPSHOT] /home/hkh/Documents/MedRob_project/controllers/unified_controller_V4/runtime/snapshots/tv_crop_qr_success_00_t091.984_mission_20260313_121044.png
+[sim=  91.984s | wall=2026-03-13T12:13:03.703] [TV][SAVE_TV] QR success from candidate index=0
+[sim=  91.984s | wall=2026-03-13T12:13:03.703] [TV][STATE] SAVE_TV -> DONE
+[sim=  92.000s | wall=2026-03-13T12:13:03.727] [MISSION] FIND_MONITOR -> SAVE_RESULTS (monitor snapshot saved)
+[sim=  94.016s | wall=2026-03-13T12:13:05.787] [DEMO][PATIENT] loaded demo case=emergency
+[sim=  94.016s | wall=2026-03-13T12:13:05.787] [DEMO][PATIENT] face_temp=38.9C, chest_temp=39.2C, resp_rate=31.0 bpm, face_color=pale with reddish patches, urgency=high
+[sim=  94.016s | wall=2026-03-13T12:13:05.787] [QR] decoded via opencv_raw_bgr
+[sim=  94.016s | wall=2026-03-13T12:13:05.787] [QR] payload={"name": "Demo-Patient", "patient_id": "P-10294", "age": 54, "bed": "1A", "vitals": {"heart_rate_bpm": 142, "spo2_percent": 86, "temperature_c": 38.9, "blood_pressure_mmHg": "165/101", "respiration_rpm": 29}, "triage": "HIGH", "action": "Human review required", "timestamp": "2026-03-04 10:58:52"}
+[sim=  94.624s | wall=2026-03-13T12:13:06.413] [MISSION_END] run_id=mission_20260313_121044 result=SUCCESS duration_s=94.624
+[sim=  94.624s | wall=2026-03-13T12:13:06.413] [SAVE] summary json: /home/hkh/Documents/MedRob_project/controllers/unified_controller_V4/runtime/exports/mission_20260313_121044_summary.json
+[sim=  94.624s | wall=2026-03-13T12:13:06.413] [MISSION] SAVE_RESULTS -> DONE (results saved)
