@@ -30,7 +30,6 @@ It enables development and testing of robot behavior such as patient localizatio
 - `assets/` monitor images and bed labels
 - `docs/` architecture notes and documentation
 - `videos/` demo recordings (optional)
-- `agent/` future AI / workflow integration components
 
 ## Setup
 
